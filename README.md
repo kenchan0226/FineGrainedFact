@@ -32,7 +32,7 @@ pip3 install -r requirements.txt
 
 ## Training
 ```
-# please change the path variables in the below script file before running it.
+# please change the CODE_PATH, DATA_PATH, OUTPUT_PATH variables in the below script file before running it.
 bash modeling/scripts/aggrefact-train-finegrainfact-model.sh 2>&1 | tee ./logs/aggrefact-train-finegrainfact-model.log
 ```
 After the training process is completed, you can find the path to the best checkpoint by searching `Best bacc chkpt path:` in the log file `./logs/aggrefact-train-finegrainfact-model.log`.
@@ -40,7 +40,7 @@ After the training process is completed, you can find the path to the best check
 ## Inference
 Run the following script. 
 ```
-# please change the path variables in the below script file before running it.
+# please change the CODE_PATH, DATA_PATH, CKPT_PATH variables in the below script file before running it.
 bash modeling/scripts/aggrefact-finetune-finegrainfact-model.sh
 ```
 
@@ -48,6 +48,6 @@ bash modeling/scripts/aggrefact-finetune-finegrainfact-model.sh
 Our preprocessed Fever 2.0 dataset is in `./data/fever2`.
 Run the following script. 
 ```
-# please change the path variables in the below script file before running it.
+# please change the CODE_PATH, DATA_PATH, CKPT_PATH variables in the below script file before running it.
 bash modeling/scripts/fever2-inference-finegrainfact-model.sh
 ```
