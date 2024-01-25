@@ -22,7 +22,7 @@ The original dataset contains 5,496 samples. We remove the duplicated annotation
 Then we randomly split data samples into train/validation/test sets of size 3,689/300/500. 
 After that, we use the SRL tool from Allennlp to parse the document and summary. 
 This repository contains our preprocessed data splits. 
-The training and validation sets are in `data/aggrefact-deduplicated-final`. The test set is in `data/aggrefact-deduplicated-final`.
+The training and validation sets are in `data/aggrefact-deduplicated-final`. The test set is in `data/aggrefact-deduplicated-final-test`.
 
 ## Environment setup
 ```
